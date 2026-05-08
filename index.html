@@ -58,7 +58,85 @@
         <p class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</p>
       </div>
     </header>
-    <main class="content"></main>
-    <footer class="footer"></footer>
+    <main class="content">
+      <section class="reservation" id="reservation">
+        <h2 class="reservation__title">Reservar una mesa</h2>
+        <form class="form-reservation">
+          <fieldset class="fieldset-reservacion">
+            <label for="nombre" class="form__label">Nombre *</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              placeholder="Nombre"
+            />
+            <label for="comensales" class="form__label"
+              >Número de comensales *</label
+            >
+            <input
+              type="number"
+              id="comensales"
+              name="comensales"
+              required
+              placeholder="1-8"
+            />
+            <label for="fecha" class="form__label">Fecha y hora *</label>
+            <input type="datetime-local" id="fecha" name="fecha" required />
+            <label for="email" class="form__label"
+              >Tu correo electrónico *</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="email@email.com"
+            />
+          </fieldset>
+          <button type="submit" class="form__button form__button--submit">
+            Reserva una mesa
+          </button>
+          <label class="form__checkbox">
+            <input type="checkbox" id="términos" class="form__checkbox-input" />
+            Acepto los términos de uso
+          </label>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <img
+        src="./images/logo_coffeeshop_light.svg"
+        alt="Triple Espresso logo"
+        class="footer__logo"
+      />
+      <div class="footer__circle"></div>
+      <div class="footer__social">
+        <h4 class="footer__social-heading">Redes sociales</h4>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__social-link" href="#">
+              <img
+                class="footer__social-icon"
+                src="./images/facebook_white.svg"
+                alt="Facebook"
+              />
+              Facebook
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__social-link" href="#">
+              <img
+                class="footer__social-icon"
+                src="./images/instagram_white.svg"
+                alt="Instagram"
+              />
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copyright">© 2026 Jorge Chagoya</p>
+    </footer>
   </body>
 </html>
